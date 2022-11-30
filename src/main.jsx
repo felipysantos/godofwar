@@ -1,12 +1,11 @@
 import React from "react";
 import ReactDOM from "react-dom/client";
-import { StyledProvider } from "./styles/provider/styled-provider";
 import { App } from "./templates/app";
-
+import { ChakraProvider } from "@chakra-ui/react";
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <StyledProvider>
+    <ChakraProvider>
       <App />
-    </StyledProvider>
+    </ChakraProvider>
   </React.StrictMode>
 );
