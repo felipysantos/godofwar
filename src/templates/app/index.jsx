@@ -3,6 +3,7 @@ import {
   Button,
   Flex,
   Heading,
+  HStack,
   Image,
   Stack,
   Tag,
@@ -15,7 +16,15 @@ import ageGroup from "../../assets/faixa-etaria.png";
 import play from "../../assets/play.svg";
 import thumbnail from "../../assets/thumbnail.gif";
 import bgHero from "../../assets/bg-hero.jpg";
+import bgStory from "../../assets/bg-story.png";
+import bgChar from "../../assets/bg-characters.png";
+import logo from "../../assets/logo-sta-monica-sony.png";
+import godOfWarLogo from "../../assets/logo.jpg";
+import kratosAtreus from "../../assets/kratos-atreus.png";
+import battleAxe from "../../assets/axel.png";
+
 import { NavbarComponent } from "../../components/navbar";
+import { Carousel } from "../../components/carousel";
 export const App = () => {
   return (
     <VStack bgColor={"black"} w={"100%"} minW={"375px"} overflow={"hidden"}>
@@ -126,7 +135,7 @@ export const App = () => {
           pt={{ xl: "220px" }}
         >
           <Text fontSize={{ base: "0.8rem", md: "1.2rem", lg: "1.125rem" }}>
-            Assista aos trailer
+            Assista ao trailer
           </Text>
           {/* Thumb group */}
           <Box
@@ -168,8 +177,217 @@ export const App = () => {
         </Stack>
       </Stack>
 
-      {/* Second section */}
+      {/* Details section */}
       <NavbarComponent />
+
+      {/* Second section */}
+      <Stack
+        flexDir={{ base: "column-reverse", lg: "row" }}
+        alignItems={"center"}
+        justifyContent={{ lg: "space-evenly" }}
+        bgImage={bgStory}
+        bgPos={"top center"}
+        bgRepeat={"no-repeat"}
+        bgSize={"cover"}
+        w={"100vw"}
+        minW={"375px"}
+        // h={"899px"}
+        pt={"80px"}
+      >
+        {/* Left Div */}
+        <Stack
+          fontFamily={"Archivo, sans-serif"}
+          color={"#fff"}
+          maxW={{ base: "80vw", md: "560px", lg: "370px", xl: "699px" }}
+          flexDir={{ base: "column" }}
+          alignItems={{ base: "center", lg: "flex-start" }}
+        >
+          <Flex
+            alignItems={{ base: "center" }}
+            justifyContent={{ base: "center", lg: "flex-start" }}
+          >
+            <Image
+              src={bullets}
+              marginRight={{ base: "0.4rem", lg: "0.5rem" }}
+            />
+            <Heading
+              fontFamily={"Archivo, sans-serif"}
+              fontSize={{
+                base: "0.8rem",
+                md: "1.2rem",
+                lg: "0.8rem",
+                xl: "1.125rem",
+              }}
+            >
+              Sony Interactive Entertainment
+            </Heading>
+          </Flex>
+
+          <Heading
+            fontFamily={"Archivo, sans-serif"}
+            fontSize={{ base: "32px", md: "3.6rem", lg: "1.8rem" }}
+            textAlign={{ base: "center", lg: "left" }}
+            lineHeight={"97.5%"}
+            fontWeight={"700"}
+            pt={"1.5rem"}
+            maxW={{ xl: "450px" }}
+          >
+            Embarque com Kratos e Atreus em uma jornada épica
+          </Heading>
+          <Text
+            maxW={{
+              base: "18rem",
+              md: "100%",
+              lg: "35rem",
+            }}
+            fontSize={{ base: "0.875rem", lg: "0.8rem", xl: "1.125rem" }}
+            textAlign={{ base: "center", lg: "left" }}
+            pt={"24px"}
+            pb={"42px"}
+            lineHeight={"160%"}
+            color={"#BDC2CB"}
+          >
+            O Fimbulwinter já começou. Kratos e Atreus devem viajar pelos Nove
+            Reinos em busca de respostas enquanto as forças asgardianas se
+            preparam para uma batalha profetizada que causará o fim do mundo.
+            Nessa jornada, eles explorarão paisagens míticas impressionantes e
+            enfrentarão inimigos aterradores: deuses nórdicos e monstros. A
+            ameaça do Ragnarök se aproxima. Kratos e Atreus terão de escolher
+            entre a segurança deles próprios e a dos reinos.
+          </Text>
+
+          {/* Corporation */}
+          <Flex
+            flexDir={{ base: "column", lg: "row" }}
+            alignItems={{ base: "center", lg: "flex-start" }}
+            justifyContent={{ lg: "center" }}
+            py={4}
+          >
+            <Image
+              mr={"13px"}
+              maxW={{ base: "100px", lg: "90px" }}
+              pb={4}
+              src={logo}
+            />
+            <Text
+              fontSize={{ base: "0.8rem", md: "1.2rem", lg: "0.8rem" }}
+              w={{ base: "280px", md: "300px", lg: "280px" }}
+              textAlign={{ base: "center", lg: "left" }}
+            >
+              Do Santa Monica Studio, esta é a sequência da aclamada versão de
+              2018 de God of War.
+            </Text>
+          </Flex>
+        </Stack>
+        {/* Right div */}
+        <Box pb={8}>
+          <Image src={kratosAtreus} maxW={{ lg: "450px", xl: "600px" }} />
+        </Box>
+      </Stack>
+
+      {/* Third section */}
+      <Stack
+        alignItems={"center"}
+        justifyContent={{ lg: "space-evenly" }}
+        bgImage={bgChar}
+        bgPos={"top center"}
+        bgRepeat={"no-repeat"}
+        bgSize={"cover"}
+        w={"100vw"}
+        minW={"375px"}
+        pt={"80px"}
+      >
+        <Flex
+          py={10}
+          alignItems={"center"}
+          justifyContent={{ lg: "space-evenly" }}
+          flexDir={{ base: "column", lg: "row" }}
+        >
+          {/* Left Div */}
+          <Stack
+            fontFamily={"Archivo, sans-serif"}
+            color={"#fff"}
+            maxW={{ base: "80vw", md: "560px", lg: "370px", xl: "699px" }}
+            flexDir={{ base: "column" }}
+            alignItems={{ base: "center", lg: "flex-start" }}
+          >
+            <Flex
+              alignItems={{ base: "center" }}
+              justifyContent={{ base: "center", lg: "flex-start" }}
+            >
+              <Image
+                src={bullets}
+                marginRight={{ base: "0.4rem", lg: "0.5rem" }}
+              />
+              <Heading
+                fontFamily={"Archivo, sans-serif"}
+                fontSize={{
+                  base: "0.8rem",
+                  md: "1.2rem",
+                  lg: "0.8rem",
+                  xl: "1.125rem",
+                }}
+              >
+                Conheça os personsagens
+              </Heading>
+            </Flex>
+
+            <Heading
+              fontFamily={"Archivo, sans-serif"}
+              fontSize={{ base: "32px", md: "3.6rem", lg: "1.8rem" }}
+              textAlign={{ base: "center", lg: "left" }}
+              lineHeight={"97.5%"}
+              fontWeight={"700"}
+              pt={"1.5rem"}
+              maxW={{ xl: "450px" }}
+            >
+              Toda grande aventura é uma história esperando para ser contada
+            </Heading>
+            <Text
+              maxW={{
+                base: "18rem",
+                md: "100%",
+                lg: "35rem",
+                // xl: "100%",
+              }}
+              fontSize={{ base: "0.875rem", lg: "0.8rem", xl: "1.125rem" }}
+              textAlign={{ base: "center", lg: "left" }}
+              pt={"24px"}
+              pb={"42px"}
+              lineHeight={"160%"}
+              color={"#BDC2CB"}
+            >
+              Reviva o começo da jornada nórdica épica de Kratos e Atreus em
+              Mitos de Midgard. Um alerta para quem não está familiarizado com
+              God of War: spoilers à frente.
+            </Text>
+          </Stack>
+
+          {/* Right div */}
+          <Flex
+            pb={8}
+            alignItems={"center"}
+            flexDir={{ base: "column", lg: "row" }}
+          >
+            <Image src={battleAxe} maxW={{ lg: "450px", xl: "600px" }} />
+            <VStack>
+              <Image src={godOfWarLogo} />
+              <Text
+                w={"143px"}
+                color={"#fff"}
+                textAlign={{ base: "center", lg: "left" }}
+              >
+                Lançamento dia <br />
+                <strong>09/11/2022</strong>
+              </Text>
+            </VStack>
+          </Flex>
+        </Flex>
+        {/* Gallery */}
+        <Box w={"90vw"} h={"auto"} pb={"100px"} >
+          <Carousel />
+        </Box>
+      </Stack>
     </VStack>
   );
 };
