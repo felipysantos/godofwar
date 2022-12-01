@@ -42,7 +42,8 @@
 
 <h3>Links do projeto</h3>
 <p><a href="https://godofwar.vercel.app/" target="_blank">Vercel</a></p>
-<p><a href="https://github.com/felipysantos/godofwar" target="_blank">Github</a></p>    
+<p><a href="https://github.com/felipysantos/godofwar" target="_blank">Github</a></p>
+<p><a href="https://codeboost.com.br/" target="_blank">Codeboost</a></p>
 <br><br>
 
 <h3 id=canais> Canais de comunicação </h3>
