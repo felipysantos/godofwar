@@ -2,7 +2,7 @@
 ![Status Website](https://img.shields.io/website?down_message=red&style=for-the-badge&up_color=green&up_message=online&url=https%3A%2F%2Fspace-flight-news-delta.vercel.app%2F)
 
 
-![Gif](https://user-images.githubusercontent.com/72530197/205107164-88eee001-16e7-4146-bc83-bb295481ffd0.gif)
+![72sbnj](https://user-images.githubusercontent.com/72530197/205107498-6d27c57d-0e72-4b4d-af5d-5422afd8a18c.gif)
 
 
 ## Tópicos
