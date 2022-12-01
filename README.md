@@ -1,7 +1,7 @@
 # God of War: Ragnarok
 ![Status Website](https://img.shields.io/website?down_message=red&style=for-the-badge&up_color=green&up_message=online&url=https%3A%2F%2Fspace-flight-news-delta.vercel.app%2F)
 
-![Gif] (https://imgflip.com/gif/72sb07)
+![Gif](https://imgflip.com/gif/72sb07)
 
 
 ## Tópicos
