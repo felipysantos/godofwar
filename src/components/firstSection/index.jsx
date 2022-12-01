@@ -28,6 +28,7 @@ export const FirstSection = () => {
       bgPos={"top center"}
       bgRepeat={"no-repeat"}
       bgSize={"cover"}
+      bgAttachment={"fixed"}
       w={"100vw"}
       minW={"375px"}
       px={{ lg: 8 }}
