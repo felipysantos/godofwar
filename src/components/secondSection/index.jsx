@@ -3,16 +3,7 @@ import bgStory from "../../assets/bg-story.png";
 import logo from "../../assets/logo-sta-monica-sony.png";
 import kratosAtreus from "../../assets/kratos-atreus.png";
 
-import {
-  Box,
-  Button,
-  Flex,
-  Heading,
-  Image,
-  Stack,
-  Tag,
-  Text,
-} from "@chakra-ui/react";
+import { Box, Flex, Heading, Image, Stack, Text } from "@chakra-ui/react";
 import { useRef } from "react";
 import { useInView } from "framer-motion";
 
@@ -30,7 +21,6 @@ export const SecondSection = () => {
       bgSize={"cover"}
       w={"100vw"}
       minW={"375px"}
-      minH={"899px"}
       pt={"80px"}
       ref={ref}
     >
