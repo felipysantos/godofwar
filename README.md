@@ -22,7 +22,6 @@
     Desenvolvimento de uma UI, com o tema de God of War: Ragnarok, com o intuito de aprofundar nos conceitos de Frontend.
 </p>
 <br>
-
 <h2 id=ferramentas>Ferramentas utilizadas</h2> 
 
 - React (principal biblioteca para construção do site)
